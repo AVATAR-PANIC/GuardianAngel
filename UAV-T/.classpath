@@ -3,8 +3,6 @@
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="lib" path="lib/asmack-jse-buddycloud-2010.12.11.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Zach/android-sdks/platforms/android-8/android.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Zach/android-sdks/add-ons/addon-google_apis-google-8/libs/maps.jar"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
