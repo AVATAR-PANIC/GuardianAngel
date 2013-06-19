@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tricorder.tecedge"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:icon="@drawable/tricorderapplogo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".opening_menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mapm"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.MAPM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Displaym"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.Displaym" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Refreshm"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.Refresh" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ServerComm"
+            android:label="@string/app_name" 
+             android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="tricorder.tecedge.SERVERCOMM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Password_request"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.PASSWORD_REQUEST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sensor_page"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.SENSOR_PAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".full_graph"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.FULL_GRAPH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Name_Loader"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.NAME_LOADER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateGraphs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.UPDATEGRAPHS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Collect_Data_Start"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.COLLECT_DATA_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Collect_Data"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.COLLECT_DATA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DeviceListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.tricorder.DEVICE_LIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PicUpdate"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.tricorder.PICUPLOAD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LocalGraphs"
+            android:label="@string/app_name"
+             android:configChanges="orientation" >
+            <intent-filter>
+                <action android:name="tricorder.tecedge.LOCALGRAPHS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
